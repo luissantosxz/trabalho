@@ -73,7 +73,7 @@
                             <p class="card-text">Nome: <?= $item['nome']?></p> <!-- no $item esta o nome imagem e também preco -->
                             <p class="card-text">Preço: R$ <?= $preco ?> </p>
                             <p class="card-text">Quantidade: <?= $carrinho['quantidade']?></p>  <!-- no $carrinho esta a quantidade e o id do item -->
-                            <button class="btn btn-danger" name="acao" value="deletar">deletar</button>
+                            <button class="btn btn-danger" name="acao" value="deletar">remover do carrinho!</button>
                         </div>
                     </div>
                     </form>
