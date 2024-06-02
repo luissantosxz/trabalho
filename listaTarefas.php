@@ -2,7 +2,6 @@
   include 'menu.php';
     require_once 'ConectaBanco.php';
         $idUsuario = $_SESSION['id'];
-
        
         $resultado = $banco->query("SELECT * FROM tarefas WHERE idUsuario='$idUsuario'");
         if(!$resultado ||  mysqli_num_rows($resultado) == 0){

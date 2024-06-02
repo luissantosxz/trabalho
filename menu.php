@@ -17,6 +17,12 @@
             <li class="nav-item">
                 <a href="listaTarefas.php" class="nav-link ">Lista de Tarefas</a>
             </li>
+            <li class="nav-item">
+                <a href="paginaProdutos.php" class="nav-link ">Produtos</a>
+            </li>
+            <li class="nav-item">
+                <a href="carrinho.php" class="nav-link ">Carrinho</a>
+            </li>
         </ul>
     </header>
 </head>
