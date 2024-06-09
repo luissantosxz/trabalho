@@ -18,6 +18,9 @@
                 <a href="listaTarefas.php" class="nav-link ">Lista de Tarefas</a>
             </li>
             <li class="nav-item">
+                <a href="cadastraProdutos.php" class="nav-link ">Cadastrar Produtos</a>
+            </li>
+            <li class="nav-item">
                 <a href="paginaProdutos.php" class="nav-link ">Produtos</a>
             </li>
             <li class="nav-item">

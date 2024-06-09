@@ -31,14 +31,19 @@ $banco->close();
                 <div class="card shadow-sm">
                     <form action="carrinho.php" method="post">
                         <input type="text" hidden name="idItem" value="<?= $percorreProduto['id'] ?>">
-                        <img src="<?= $percorreProduto['imagem'] ?>" class="card-img-top" width="100%" height="225"></img>
+                        <img src="<?= $percorreProduto['imagem'] ?>" class="card-img-top object-fit-contain border rounded" width="100%" height="225"></img>
                         <div class="card-body">
                             <p class="card-text"><?= $percorreProduto['nome'] ?> R$ <?= $percorreProduto['preco'] ?></p>
                             <p class="card-text">Quantidade: </p>
                             <select id="qtd" class="form-control mb-2" name="quantidade" required>
-                                <option value=1 selected>1</option>
-                                <option value=2> 2 </option>
-                                <option value=3> 3 </option>
+                                <?php 
+                                for($i = 1; $i <= $percorreProduto['quantidade']; $i++){
+                                    
+                                ?>
+                                <option value="<?=$i?>"><?= $i ?></option>
+                                <?php 
+                                    }
+                                ?>
                             </select>
                             <button class="btn btn-primary" name="acao" value="adicionar">Adicionar produto ao carrinho!</button>
                         </div>
